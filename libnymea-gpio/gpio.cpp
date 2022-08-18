@@ -129,6 +129,7 @@
 */
 
 #include "gpio.h"
+#include "leaflet.h"
 
 Q_LOGGING_CATEGORY(dcGpio, "Gpio")
 
