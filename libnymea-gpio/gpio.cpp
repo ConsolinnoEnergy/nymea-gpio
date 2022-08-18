@@ -133,7 +133,7 @@
 Q_LOGGING_CATEGORY(dcGpio, "Gpio")
 
 
-QString leafleatGPIOmap(int gpio) {
+QString leafletGPIOmap(int gpio) {
     switch (gpio)
     {
     case 496:
@@ -150,7 +150,7 @@ Gpio::Gpio(int gpio, QObject *parent) :
     QObject(parent),
     m_gpio(gpio),
     m_direction(Gpio::DirectionInvalid),
-    m_gpioDirectory(QDir(leafleatGPIOmap(gpio)))
+    m_gpioDirectory(QDir(leafletGPIOmap(gpio)))
 {
     qRegisterMetaType<Gpio::Value>();
 
