@@ -25,7 +25,6 @@ build:buster:
   script:
     - apt-get update
     - apt-get install -y git-buildpackage python rename
-    - cd sdm630_generator; ./sdm630_generator.sh; cd ..
     - gbp dch -S -a --snapshot-number=`date +"%s"` --ignore-branch
     - CONFIG_SITE=/etc/dpkg-cross/cross-config.armhf  gosu root dpkg-buildpackage -b -aarmhf -Pcross,nocheck && mkdir -p build/buster && gosu root mv ../*.deb build/buster/
   artifacts:
@@ -40,7 +39,6 @@ build:focal:
   script:
     - apt-get update
     - apt-get install -y git-buildpackage python rename
-    - cd sdm630_generator; ./sdm630_generator.sh; cd ..
     - gbp dch -S -a --snapshot-number=`date +"%s"` --ignore-branch
     - dpkg-buildpackage -b  && mkdir -p build/focal &&  mv ../*.deb build/focal
   artifacts:
