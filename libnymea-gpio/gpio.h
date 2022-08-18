@@ -38,6 +38,8 @@
 
 Q_DECLARE_LOGGING_CATEGORY(dcGpio)
 
+QString leafletGPIOmap(int gpio);
+
 class Gpio : public QObject
 {
     Q_OBJECT

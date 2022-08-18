@@ -72,14 +72,14 @@
  *  This signal will be emitted, if the monitored \l{Gpio}{Gpios} changed his \a value. */
 
 #include "gpiomonitor.h"
-#include "leaflet.h"
+#include "gpio.h"
 
 /*! Constructs a \l{GpioMonitor} object with the given \a gpio number and \a parent. */
 GpioMonitor::GpioMonitor(int gpio, QObject *parent) :
     QObject(parent),
     m_gpioNumber(gpio)
 {
-    m_valueFile.setFileName(leafletGPIOmap(m_gpioNumber) + "/value");
+    m_valueFile.setFileName(leafletGPIOmap(gpio) + "/value");
 }
 
 /*! Returns true if this \l{GpioMonitor} could be enabled successfully. With the \a activeLow parameter the values can be inverted.
