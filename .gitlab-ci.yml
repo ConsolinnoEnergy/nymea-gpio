@@ -39,6 +39,7 @@ build:focal:
   script:
     - apt-get update
     - apt-get install -y git-buildpackage python rename
+    - apt-get install -y debhelper dpkg-dev qt5-qmake qtbase5-dev qtbase5-dev-tools
     - gbp dch -S -a --snapshot-number=`date +"%s"` --ignore-branch
     - dpkg-buildpackage -b  && mkdir -p build/focal &&  mv ../*.deb build/focal
   artifacts:
