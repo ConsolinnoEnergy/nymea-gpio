@@ -2,3 +2,6 @@ include:
   - project: 'consolinno/iot-cloud-edge-embedded/edge/hems-ci'
     file: '/nymea/development.yml'
     ref: main
+
+variables:
+  COMPILE_DEPENDENCIES: "debhelper dpkg-dev qt5-qmake qtbase5-dev qtbase5-dev-tools"
