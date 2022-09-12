@@ -4,4 +4,4 @@ include:
     ref: main
 
 variables:
-  ADDITIONAL_COMPILE_DEPENDENCIES: "debhelper qt5-qmake"
+  ADDITIONAL_COMPILE_DEPENDENCIES: "debhelper:armhf qt5-qmake:armhf qtbase5-dev:armhf qtbase5-dev-tools:armhf" # AMD Deps sind alle da
