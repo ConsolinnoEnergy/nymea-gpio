@@ -4,4 +4,4 @@ include:
     ref: main
 
 variables:
-  COMPILE_DEPENDENCIES: "debhelper dpkg-dev qt5-qmake qtbase5-dev qtbase5-dev-tools"
+  ADDITIONAL_COMPILE_DEPENDENCIES: "debhelper dpkg-dev qt5-qmake qtbase5-dev qtbase5-dev-tools"
