@@ -5,3 +5,4 @@ include:
 
 variables:
   ADDITIONAL_COMPILE_DEPENDENCIES: "debhelper:armhf qt5-qmake:armhf qtbase5-dev:armhf qtbase5-dev-tools:armhf" # AMD Deps sind alle da
+  CUSTOM_BUILD_OPTIONS_BUSTER: "nocheck"
