@@ -1,4 +1,24 @@
-nymea-gpio (1.4.0-1) qa; urgency=medium
+nymea-gpio (1.5.101-1) jammy; urgency=medium
+  * Added GPIO mapping for leaflet 1U0022
+  * Bumps version number to reflect fork: 1.5.1>01-1<-- Fork version based on upstream 1.5.1
+ -- Leonhard Heizinger <l.heizinger@consolinno.de>  Wed, 14 Dec 2022 10:43:41 +0100
+
+nymea-gpio (1.5.1) jammy; urgency=medium
+
+
+ -- jenkins <developer@nymea.io>  Mon, 07 Nov 2022 12:47:46 +0100
+
+nymea-gpio (1.5.0) jammy; urgency=medium
+
+
+ -- jenkins <developer@nymea.io>  Mon, 17 Oct 2022 11:20:20 +0200
+
+nymea-gpio (1.4.1) jammy; urgency=medium
+
+
+ -- jenkins <developer@nymea.io>  Fri, 23 Sep 2022 16:33:32 +0200
+
+nymea-gpio (1.4.0) jammy; urgency=medium
 
 
  -- jenkins <developer@nymea.io>  Tue, 09 Aug 2022 23:03:00 +0200
