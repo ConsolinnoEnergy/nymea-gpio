@@ -1,8 +1,4 @@
-nymea-gpio (1.5.101-2) jammy; urgency=medium
-  * No changes - bumping debian revision for Consolinno HEMS v0.3.0
- -- Leonhard Heizinger <l.heizinger@consolinno.de>  Wed, 27 Feb 2022 10:28:48 +0100
-
-nymea-gpio (1.5.101-1) jammy; urgency=medium
+nymea-gpio (1.5.101-3) jammy; urgency=medium
   * Added GPIO mapping for leaflet 1U0022
   * Bumps version number to reflect fork: 1.5.1>01-1<-- Fork version based on upstream 1.5.1
  -- Leonhard Heizinger <l.heizinger@consolinno.de>  Wed, 14 Dec 2022 10:43:41 +0100
