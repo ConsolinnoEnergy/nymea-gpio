@@ -129,15 +129,29 @@
 */
 
 #include "gpio.h"
+#include "leaflet.h"
 
 Q_LOGGING_CATEGORY(dcGpio, "Gpio")
+
+
+QString leafletGPIOmap(int gpio) {
+    switch (gpio)
+    {
+    case 496:
+        return(QString("/sys/class/gpio/S_1"));
+    case 497:
+        return(QString("/sys/class/gpio/S_2"));
+    default:
+        return(QString("/sys/class/gpio/gpio%1").arg(QString::number(gpio)));
+    }
+}
 
 /*! Constructs a Gpio object to represent a GPIO with the given \a gpio number and \a parent. */
 Gpio::Gpio(int gpio, QObject *parent) :
     QObject(parent),
     m_gpio(gpio),
     m_direction(Gpio::DirectionInvalid),
-    m_gpioDirectory(QDir(QString("/sys/class/gpio/gpio%1").arg(QString::number(gpio))))
+    m_gpioDirectory(QDir(leafletGPIOmap(gpio)))
 {
     qRegisterMetaType<Gpio::Value>();
 
