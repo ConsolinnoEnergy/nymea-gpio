@@ -1,3 +1,10 @@
+nymea-plugins (1.7.0-3) buster focal jammy; urgency=medium
+
+* Adapt to new versioning schema
+
+ -- Florian Knab <f.knab@consolinno.de> Thu, 19 Sep 2023 7:50:53 +0200
+
+
 nymea-gpio (1.7.0-2) jammy; urgency=medium
 
 
