@@ -1,4 +1,4 @@
-nymea-gpio (1.7.0-3) buster focal jammy; urgency=medium
+nymea-gpio (1.7.0-4) buster focal jammy; urgency=medium
 
 * Adapt to new versioning schema
 
